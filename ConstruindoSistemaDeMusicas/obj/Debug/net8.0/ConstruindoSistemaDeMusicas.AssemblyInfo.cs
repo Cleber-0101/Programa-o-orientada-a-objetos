@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConstruindoSistemaDeMusicas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82982bd4b4a799d05cc45958dd4299ec4041fdba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b48f058c94d411b17dd145b45161a7e10b915a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConstruindoSistemaDeMusicas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConstruindoSistemaDeMusicas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
