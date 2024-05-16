@@ -1,0 +1,15 @@
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\bin\Debug\net8.0\ConstruindoSistemaDeMusicas.exe
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\bin\Debug\net8.0\ConstruindoSistemaDeMusicas.deps.json
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\bin\Debug\net8.0\ConstruindoSistemaDeMusicas.runtimeconfig.json
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\bin\Debug\net8.0\ConstruindoSistemaDeMusicas.dll
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\bin\Debug\net8.0\ConstruindoSistemaDeMusicas.pdb
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\obj\Debug\net8.0\ConstruindoSistemaDeMusicas.GeneratedMSBuildEditorConfig.editorconfig
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\obj\Debug\net8.0\ConstruindoSistemaDeMusicas.AssemblyInfoInputs.cache
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\obj\Debug\net8.0\ConstruindoSistemaDeMusicas.AssemblyInfo.cs
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\obj\Debug\net8.0\ConstruindoSistemaDeMusicas.csproj.CoreCompileInputs.cache
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\obj\Debug\net8.0\ConstruindoSistemaDeMusicas.sourcelink.json
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\obj\Debug\net8.0\ConstruindoSistemaDeMusicas.dll
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\obj\Debug\net8.0\refint\ConstruindoSistemaDeMusicas.dll
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\obj\Debug\net8.0\ConstruindoSistemaDeMusicas.pdb
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\obj\Debug\net8.0\ConstruindoSistemaDeMusicas.genruntimeconfig.cache
+C:\ConstruindoSistemaDeMusicas\ConstruindoSistemaDeMusicas\obj\Debug\net8.0\ref\ConstruindoSistemaDeMusicas.dll

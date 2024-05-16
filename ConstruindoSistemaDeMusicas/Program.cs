@@ -1,2 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+
+
+
+string mensagem = "seja bem vindo ao seu app de musicas";
+
+
+void sistamaDeMusicas()
+{
+    Console.WriteLine(mensagem);
+
+}
+
+
+sistamaDeMusicas();
