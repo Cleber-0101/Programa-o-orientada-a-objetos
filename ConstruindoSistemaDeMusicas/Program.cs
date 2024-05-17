@@ -5,12 +5,9 @@ using System.Threading;
 class Program
 {
     string mensagem = "Seja bem-vindo ao seu app de músicas";
-    //  List<string> listaDeBandas = new List<string> { "cpm" , "calypsu" , "djonga"};
-
     Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
 
-
-    public Program() { } 
+    public Program() { }
 
     void BoasVindas()
     {
@@ -33,7 +30,7 @@ class Program
         Console.WriteLine("Digite -1 para sair");
 
         Console.Write("\nDigite uma opção: ");
-        string escolhaUsuario = Console.ReadLine();
+        string escolhaUsuario = Console.ReadLine()!;
         int escolhaUsuarioNumero;
 
         if (int.TryParse(escolhaUsuario, out escolhaUsuarioNumero))
@@ -51,7 +48,7 @@ class Program
                     AvaliarBanda();
                     break;
                 case 4:
-                    Console.WriteLine("Você escolheu a opção " + escolhaUsuario);
+                    ExibirMedia();
                     break;
                 case -1:
                     Console.WriteLine("Você escolheu a opção " + escolhaUsuario);
@@ -72,8 +69,8 @@ class Program
         Console.Clear();
         Console.WriteLine("Registro de Bandas");
         Console.Write("Digite o nome da Banda que deseja Registrar: ");
-        string nomeDaBanda = Console.ReadLine();
-        bandasRegistradas.Add(nomeDaBanda, new List<int>());
+        string nomeDaBanda = Console.ReadLine()!;
+        bandasRegistradas.Add(nomeDaBanda, new List<int>()!);
         Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso");
         Thread.Sleep(2000);
         Console.Clear();
@@ -94,32 +91,66 @@ class Program
         ExibirMenu();
     }
 
-
     void AvaliarBanda()
     {
         Console.Clear();
-        Console.Write("Digite o nome da banda que deseja avaliar : ");
+        Console.Write("Digite o nome da banda que deseja avaliar: ");
         string nomeDaBanda = Console.ReadLine()!;
         if (bandasRegistradas.ContainsKey(nomeDaBanda))
         {
-            Console.Write($"Qual a nota que a banda {nomeDaBanda}merece");
+            Console.Write($"Qual a nota que a banda {nomeDaBanda} merece: ");
             int nota = int.Parse(Console.ReadLine()!);
             bandasRegistradas[nomeDaBanda].Add(nota);
-            Console.WriteLine($"A nota {nota} foi registrada com sucesso ");
+            Console.WriteLine($"A nota {nota} foi registrada com sucesso");
             Thread.Sleep(2000);
-            Console.Clear();    
+            Console.Clear();
             ExibirMenu();
         }
         else
         {
-            Console.WriteLine($" A banda {nomeDaBanda} não foi encontrada ");
-            Console.WriteLine(" Digite uma tecla pra volta as opçoes do menu ");
+            Console.WriteLine($"A banda {nomeDaBanda} não foi encontrada");
+            Console.WriteLine("Digite uma tecla para voltar às opções do menu");
             Console.ReadKey();
-            ExibirMenu();
             Console.Clear();
+            ExibirMenu();
         }
-
-
     }
 
+    void ExibirMedia()
+    {
+        Console.Clear();
+        Console.Write("Digite o nome da banda que deseja ver a média: ");
+        string nomeDaBanda = Console.ReadLine()!;
+        if (bandasRegistradas.ContainsKey(nomeDaBanda))
+        {
+            List<int> notas = bandasRegistradas[nomeDaBanda];
+            if (notas.Count > 0)
+            {
+                double media = CalcularMedia(notas);
+                Console.WriteLine($"A média das notas da banda {nomeDaBanda} é {media:F2}");
+            }
+            else
+            {
+                Console.WriteLine($"A banda {nomeDaBanda} ainda não tem notas registradas.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Banda não encontrada");
+        }
+        Console.WriteLine("Digite uma tecla para voltar ao menu principal");
+        Console.ReadKey();
+        Console.Clear();
+        ExibirMenu();
+    }
+
+    double CalcularMedia(List<int> notas)
+    {
+        int soma = 0;
+        foreach (int nota in notas)
+        {
+            soma += nota;
+        }
+        return (double)soma / notas.Count;
+    }
 }
